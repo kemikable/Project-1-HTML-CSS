@@ -1,13 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 3% 5% 0 5%;
+    width: 100vw;
 }
+
+/* верхняя иконка */
 
 .sync-black {
-    width: 4%;
+    width: 6%;
 }
 
+/* описание курсов */
 .nav {
     display: flex;
+    /* justify-content: space-between; */
+    margin-top: 5%;
+    width: 55%;
+    /* gap: 5px; */
+    width: 45%;
+    min-width: 45%;
 }
+
+/* текст курсов */
+.nav-status {
+    font-size: 15px;
+    /* margin-right: 25%; */
+    /* width: 300px; */
+    width: 75%;
+
+
+}
+
+/* блоки курсов */
+.courses,
+.time,
+.date {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 60%;
+    min-width: 25%;
+    margin-left: -5%;
+}
+
+/* иконки курсов */
+.globe,
+.clock,
+.calendar {
+    width: 22px;
+    height: 22px;
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    width: 50%;
+    margin-top: 2%;
+    /* margin-right: -5%; */
+    min-width: 50%;
+    /* min-width: 500px; */
+}
+
+.how-to {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 3%; */
+}
+
+.sitting-cameraman {
+
+    /* padding-left: 10px; */
+}
+
+.sitting-shade {
+    display: flex;
+    margin-right: 20px;
+    min-width: 400px;
+    padding-right: 150px;
+    /* margin-left: 15px; */
+    /* width: 200px; */
+}
+
+.first-shade {
+    position: relative;
+    z-index: -1;
+    right: 250px;
+    top: 330px;
+    height: 40px;
+    /* width: 420px; */
+
+}
+
+.tarkov {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+}
+
+.tarkov-box {
+    background-color: #1E4681;
+    width: 500px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10%;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15%;
+
+
+}
+
+.name-tarkov {
+    font-size: 20px;
+    padding-left: 55%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+.text {
+    /* width: 40%; */
+    width: 45%;
+    min-width: 45%;
+}
+
+.about-courses {
+    margin-top: 3%;
+
+}
+
+/* Стоячий оператор и тень */
+
+.standing-shade {
+    display: flex;
+    min-width: 500px;
+    margin-top: 2%;
+    /* margin-left: 10%; */
+    /* min-width: 20%; */
+    /* margin-left: 10%; */
+    /* margin-top: 5%; */
+}
+
+.second-shade {
+    position: relative;
+    z-index: -1;
+    height: 40px;
+    width: 400px;
+    right: 370px;
+    top: 300px;
+
+}
+
+.stand-cameraman {
+    /* margin-left: 45px; */
+    width: 314px;
+    height: 315px;
+}
+
+.last-cameraman {
+    margin-top: 5%;
+    display: flex;
+}
+
+.duration {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media(max-width:1414px) {
+    .first-shade {
+        right: 250px;
+        top: 330px
+    }
+
+    h1 {
+
+        width: 60%;
+        font-size: 70px;
+    }
+} */
