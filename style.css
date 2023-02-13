@@ -2,10 +2,13 @@
 
 
 
-body {
+body,
+html {
     font-family: 'Roboto', sans-serif;
-    margin: 5% 7% 0 5%;
-    width: 100vw;
+    margin: 2% 0 0 15px;
+    /* width: 100%; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* верхняя иконка */
@@ -89,16 +92,11 @@ h1 {
     top: 330px;
     height: 40px;
     /* width: 420px; */
-
 }
 
 .tarkov {
     font-family: 'Roboto Slab', serif;
     font-size: 25px;
-}
-
-h2 {
-    font-family: 'Roboto Slab', serif;
 }
 
 .tarkov-box {
@@ -118,9 +116,10 @@ h2 {
     padding-left: 55%;
 }
 
+/* Секция О КУРСЕ */
 .about {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 5%;
     font-size: 24px;
     /* gap: 100px */
@@ -175,7 +174,7 @@ h2 {
 
 .duration {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 2%;
     /* margin-right: 7%; */
     margin-left: -3%;
@@ -198,6 +197,7 @@ h2 {
 
 h2 {
     font-size: 55px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .blue-color {
@@ -207,7 +207,7 @@ h2 {
 
 .format-about {
     display: flex;
-    gap: 120px;
+    gap: 25px;
 
 }
 
@@ -217,11 +217,43 @@ h2 {
     width: 20%;
 }
 
+/* Список ЧТО УЗНАЁМ */
 ul {
     font-size: 24px;
     width: 50%;
 }
 
+.programm {
+    margin-top: 5%;
+}
+
+.programm-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1440px;
+    padding-left: 5px;
+
+
+}
+
+.coll {
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.5%;
+
+
+}
+
+.prog-text {
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.prog-name-date {
+    font-size: 25px;
+    padding-left: 15px;
+}
 
 /* @media(max-width:1414px) {
     .first-shade {
