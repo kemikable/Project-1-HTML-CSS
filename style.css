@@ -6,9 +6,8 @@ body,
 html {
     font-family: 'Roboto', sans-serif;
     margin: 2% 0 0 2%;
-    /* width: 100%; */
     max-width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* верхняя иконка */
@@ -20,23 +19,12 @@ html {
 /* описание курсов */
 .nav {
     display: flex;
-    /* justify-content: space-between; */
     margin-top: 5%;
     width: 55%;
-    /* gap: 5px; */
     width: 45%;
     min-width: 45%;
 }
 
-/* текст курсов */
-.nav-status {
-    font-size: 15px;
-    /* margin-right: 25%; */
-    /* width: 300px; */
-    width: 75%;
-
-
-}
 
 /* блоки курсов */
 .courses {
@@ -47,26 +35,11 @@ html {
     width: 45%;
 }
 
-.courses,
-.time,
-.date {
-
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* width: 60%; */
-    /* min-width: 25%; */
-    /* margin-left: -5%; */
-
-}
 
 /* иконки курсов */
 .globe,
 .clock,
 .date {
-    /* width: 22px;
-    height: 22px; */
-    /* margin-right: 10%;
-    margin-left: 15%; */
     margin-right: 7%;
     width: calc(10% + 3 * ((100vw - 320px) / (1440 - 320)));
 }
@@ -77,26 +50,18 @@ html {
     font-size: calc(10% + 10 * ((100vw - 320px) / (1440 - 320)));
 }
 
-/* .courses li {
-    width: 20%;
-} */
 
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: calc(21px + 60 * ((100vw - 320px) / (1440 - 320)));
-    /* line-height: 101%; */
-    /* width: 50%; */
-    /* margin-top: 2%; */
-    /* margin-right: -5%; */
     min-width: 50%;
     max-width: 50%;
-    /* min-width: 500px; */
 }
 
 .how-to {
     display: flex;
     justify-content: space-between;
-    /* gap: 3%; */
+
 }
 
 /* Фотография сидячего оператора с тенью */
@@ -128,78 +93,87 @@ h1 {
 
 }
 
+/* Речь Тарковвского */
+.tarkov-center {
+    display: flex;
+    justify-content: center;
+}
+
 .tarkov {
     font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+    font-size: calc(24px + 8 * (100vw / 1440)/ (1440 - 320));
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .tarkov-box {
     background-color: #1E4681;
-    width: 500px;
+    width: 45%;
+    min-width: 420px;
     color: white;
-    border-radius: 25px;
+    border-radius: 10px;
     margin-top: 10%;
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 15%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
 }
 
 .name-tarkov {
-    font-size: 20px;
-    padding-left: 55%;
+    font-size: calc(20px + 8 * (100vw / 1440)/ (1440 - 320));
+    text-align: end;
+    padding-top: 2%;
+    padding-right: 3%;
 }
 
 /* Секция О КУРСЕ */
 .about {
     display: flex;
-    /* justify-content: space-between; */
-    margin-top: 5%;
-    font-size: 24px;
-    /* gap: 100px */
+    justify-content: space-between;
+    margin-top: 15%;
+    font-size: calc(20px + 8 * (100vw / 1440)/ (1440 - 320));
+
 }
 
 .text {
-    /* width: 40%; */
-    width: 45%;
+
+    width: 50%;
     min-width: 35%;
-    /* margin-right: 150px; */
+
 }
 
 .about-courses {
     margin-top: 3%;
+    font-size: calc(60px + 8 * (100vw / 1440)/ (1440 - 320));
 
 }
 
 /* Стоячий оператор и тень */
 
 .standing-shade {
-    display: flex;
-    min-width: 500px;
-    margin-top: 2%;
-    padding-left: 250px;
-    /* margin-left: 10%; */
-    /* min-width: 20%; */
-    /* margin-left: 150px; */
-    /* margin-top: 5%; */
-}
-
-.second-shade {
+    width: calc(200px + 120 * ((100vw - 320px) / (1440 - 320)));
+    align-self: center;
+    height: auto;
     position: relative;
-    z-index: -1;
-    height: 75px;
-    width: 315px;
-    right: 530px;
-    top: 280px;
-    padding-left: 220px;
-
+    margin-right: 5%;
+    margin-left: 2%;
 }
 
 .stand-cameraman {
-    /* margin-left: 45px; */
-    width: 314px;
-    height: 315px;
+    width: 90%;
+    margin-bottom: 10px;
+    height: auto;
 }
+
+.second-shade {
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    z-index: -1;
+
+}
+
 
 .last-cameraman {
     margin-top: 5%;
