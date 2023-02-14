@@ -5,7 +5,7 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
-    margin: 2% 0 0 15px;
+    margin: 2% 0 0 2%;
     /* width: 100%; */
     max-width: 100%;
     overflow-x: hidden;
@@ -39,33 +39,57 @@ html {
 }
 
 /* блоки курсов */
+.courses {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+    width: 45%;
+}
+
 .courses,
 .time,
 .date {
-    display: flex;
+
+    /* display: flex; */
     /* justify-content: space-around; */
-    width: 60%;
-    min-width: 25%;
-    margin-left: -5%;
+    /* width: 60%; */
+    /* min-width: 25%; */
+    /* margin-left: -5%; */
+
 }
 
 /* иконки курсов */
 .globe,
 .clock,
-.calendar {
-    width: 22px;
-    height: 22px;
-    margin-right: 10%;
-    margin-left: 15%;
+.date {
+    /* width: 22px;
+    height: 22px; */
+    /* margin-right: 10%;
+    margin-left: 15%; */
+    margin-right: 7%;
+    width: calc(10% + 3 * ((100vw - 320px) / (1440 - 320)));
 }
+
+.courses-list {
+    width: 65%;
+    margin-right: 2%;
+    font-size: calc(10% + 10 * ((100vw - 320px) / (1440 - 320)));
+}
+
+/* .courses li {
+    width: 20%;
+} */
 
 h1 {
     font-family: 'Roboto Slab', serif;
-    font-size: 80px;
-    width: 50%;
-    margin-top: 2%;
+    font-size: calc(21px + 60 * ((100vw - 320px) / (1440 - 320)));
+    /* line-height: 101%; */
+    /* width: 50%; */
+    /* margin-top: 2%; */
     /* margin-right: -5%; */
     min-width: 50%;
+    max-width: 50%;
     /* min-width: 500px; */
 }
 
@@ -75,23 +99,33 @@ h1 {
     /* gap: 3%; */
 }
 
+/* Фотография сидячего оператора с тенью */
 
 .sitting-shade {
-    display: flex;
-    margin-right: 20px;
-    min-width: 400px;
-    padding-right: 150px;
-    /* margin-left: 15px; */
-    /* width: 200px; */
+
+    width: calc(200px + 120 * ((100vw - 320px) / (1440 - 320)));
+    align-self: center;
+    height: auto;
+    position: relative;
+    margin-right: 5%;
+    margin-left: 2%;
+}
+
+.sitting-cameraman {
+
+    width: 90%;
+    margin-bottom: 10px;
+    height: auto;
 }
 
 .first-shade {
-    position: relative;
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     z-index: -1;
-    right: 250px;
-    top: 330px;
-    height: 40px;
-    /* width: 420px; */
+
 }
 
 .tarkov {
@@ -103,7 +137,7 @@ h1 {
     background-color: #1E4681;
     width: 500px;
     color: white;
-    border-radius: 15px;
+    border-radius: 25px;
     margin-top: 10%;
     padding-left: 30px;
     padding-top: 5px;
@@ -231,7 +265,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     padding-left: 5px;
 
 
@@ -248,11 +282,26 @@ ul {
 .prog-text {
     padding-left: 15px;
     font-size: 30px;
+    margin-top: -3px;
+    margin-bottom: -5px;
 }
 
 .prog-name-date {
     font-size: 25px;
     padding-left: 15px;
+}
+
+.no-br {
+    margin-bottom: -20px;
+}
+
+.grey-block {
+    background: #EFEFEF;
+    padding-left: 120px;
+}
+
+.comment {
+    background-color: white
 }
 
 /* @media(max-width:1414px) {
