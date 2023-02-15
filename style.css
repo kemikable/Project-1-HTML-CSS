@@ -97,7 +97,7 @@ h1 {
 
 .tarkov {
     font-family: 'Roboto Slab', serif;
-    font-size: calc(16px + 8 * (100vw / 1440)/ (1440 - 320));
+    font-size: calc(20px + 10 * (100vw / 1440)/ (1440 - 320));
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -105,7 +105,7 @@ h1 {
 .tarkov-box {
     background-color: #1E4681;
     width: auto;
-    max-width: 45%;
+    max-width: 40%;
     color: white;
     border-radius: 10px;
     margin-top: 10%;
@@ -350,7 +350,7 @@ p {
 }
 
 .cost-weight {
-    font-size: calc(50px + 10 * ((100vw - 320px) / (1440 - 320)));
+    font-size: calc(50px + 7 * ((100vw - 320px) / (1440 - 320)));
 
 }
 
@@ -374,21 +374,80 @@ p {
 
 /* Footer */
 
-
 footer {
     background-color: black;
     margin-left: -7%;
     padding-left: 11%;
     padding-top: 2.5%;
+    padding-bottom: 1%;
+}
+
+.logo-list {
+    list-style-type: none;
+    display: flex;
+    margin-left: -40px;
+    gap: 0.5%;
+    font-size: calc(10px + 5 * ((100vw - 320px) / (1440 - 320)));
+}
+
+.logo-list li img {
+    width: calc(10px + 7 * ((100vw - 320px) / (1440 - 320)));
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+
+.sync-white {
+    width: calc(30px + 5 * ((100vw - 320px) / (1440 - 320)));
+}
+
+.contact-list {
+    color: white;
+    list-style-type: none;
+    font-size: calc(10px + 3 * ((100vw - 320px) / (1440 - 320)));
+
+}
+
+.contact-list li {
+    margin-bottom: 7%;
+}
+
+.contact-list img {
+    width: calc(14px + 5 * ((100vw - 320px) / (1440 - 320)));
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    font-size: calc(10px + 3 * ((100vw - 320px) / (1440 - 320)));
+}
+
+.space-right {
+    /* margin-right: 1%; */
+    /* margin-left: 5%; */
+    /* padding-right: 1%; */
 }
 
 @media(max-width:726px) {
     .programm-items {
         flex-direction: column;
-
         gap: 10%;
-        /* margin-right: 10%; */
+    }
 
+    .format-about {
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .crane-shade {
+        display: none;
     }
 
     .avatar {
@@ -406,4 +465,13 @@ footer {
     .review-block {
         /* margin-left: -%; */
     }
+
+    .tarkov-box {
+        max-width: 65%;
+        margin-left: -30%;
+    }
+
+
+
+
 }
