@@ -5,7 +5,7 @@
 body,
 html {
     font-family: 'Roboto', sans-serif;
-    margin: 2% 0 0 2%;
+    margin: 2% 0 0 3%;
     max-width: 100%;
     /* overflow-x: hidden; */
 }
@@ -102,15 +102,17 @@ h1 {
 
 .tarkov {
     font-family: 'Roboto Slab', serif;
-    font-size: calc(24px + 8 * (100vw / 1440)/ (1440 - 320));
+    font-size: calc(16px + 8 * (100vw / 1440)/ (1440 - 320));
     padding-left: 2%;
     padding-right: 2%;
 }
 
 .tarkov-box {
     background-color: #1E4681;
-    width: 45%;
-    min-width: 420px;
+    width: auto;
+    max-width: 45%;
+    /* min-width: 420px; */
+
     color: white;
     border-radius: 10px;
     margin-top: 10%;
@@ -121,7 +123,7 @@ h1 {
 }
 
 .name-tarkov {
-    font-size: calc(20px + 8 * (100vw / 1440)/ (1440 - 320));
+    font-size: calc(16px + 8 * (100vw / 1440)/ (1440 - 320));
     text-align: end;
     padding-top: 2%;
     padding-right: 3%;
@@ -145,7 +147,7 @@ h1 {
 
 .about-courses {
     margin-top: 3%;
-    font-size: calc(60px + 8 * (100vw / 1440)/ (1440 - 320));
+    font-size: calc(40px + 5 * (100vw / 1440)/ (1440 - 320));
 
 }
 
@@ -232,6 +234,7 @@ h3 {
 h2 {
     font-size: calc(18px + 10 * ((100vw - 320px) / (1440 - 320)));
     font-family: 'Roboto Slab', serif;
+    margin-left: 1%;
 }
 
 .blue-color {
@@ -251,40 +254,50 @@ h2 {
 /* Список ЧТО УЗНАЁМ */
 .what-list {
     font-size: calc(16px + 10 * ((100vw - 320px) / (1440 - 320)));
-    width: 60%;
+    width: 50%;
+    margin-bottom: 5%;
 }
 
-.programm {
-    margin-top: 5%;
-}
+/* Карточки */
 
 .programm-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    margin-left: -1%;
+    gap: 3%;
     /* max-width: 1440px; */
     padding-left: 5px;
+    margin-top: 3%;
+    /* text-align: center; */
+    align-items: center;
 
 
 }
 
+.card {
+    width: calc(250px + 130 * ((100vw - 320px) / (1440 - 320)));
+}
+
 .coll {
-    border-radius: 30px;
+    border-radius: 32px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
-    margin-bottom: 1.5%;
+    margin-bottom: 3%;
 
+}
 
+h4 {
+    font-size: calc(24px + 10 * ((100vw - 320px) / (1440 - 320)));
 }
 
 .prog-text {
     padding-left: 15px;
-    font-size: 30px;
+    font-size: calc(20px + 10 * ((100vw - 320px) / (1440 - 320)));
     margin-top: -3px;
     margin-bottom: -5px;
 }
 
 .prog-name-date {
-    font-size: 25px;
+    font-size: calc(16px + 10 * ((100vw - 320px) / (1440 - 320)));
     padding-left: 15px;
 }
 
@@ -292,24 +305,111 @@ h2 {
     margin-bottom: -20px;
 }
 
-.grey-block {
+.review-block {
     background: #EFEFEF;
-    padding-left: 120px;
+    padding-left: 15%;
+    width: 100vw;
+    margin-left: -10%;
+    padding-top: 3%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
 }
 
 .comment {
-    background-color: white
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 1% 1.5%;
+    width: 50%;
 }
 
-/* @media(max-width:1414px) {
-    .first-shade {
-        right: 250px;
-        top: 330px
+.review-left {
+    margin-left: 0%;
+}
+
+.name-fb {
+    margin-top: 3%;
+}
+
+.logo-avatar {
+    width: 50%;
+}
+
+.avatar-fb {
+    display: flex;
+    gap: 3%;
+
+}
+
+/* .comment  */
+p {
+    font-size: calc(10px + 10 * ((100vw - 320px) / (1440 - 320)));
+}
+
+.logo-avatar img {
+    width: 15%;
+}
+
+.avatar {
+    margin-top: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+.cost-block {
+    background: #9DC9C8;
+    display: block;
+    margin-top: -2%;
+    margin-left: -7%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.cost-weight {
+    font-size: calc(50px + 10 * ((100vw - 320px) / (1440 - 320)));
+
+}
+
+.cost-lesson-now {
+    display: flex;
+    width: 50%;
+    gap: 5%;
+}
+
+
+.level-now {
+    display: inline-block;
+    margin-bottom: 5%;
+    font-size: calc(15px + 5 * ((100vw - 320px) / (1440 - 320)));
+    font-weight: 400;
+
+}
+
+
+
+@media(max-width:726px) {
+    .programm-items {
+        flex-direction: column;
+
+        gap: 10%;
+        /* margin-right: 10%; */
+
     }
 
-    h1 {
-
-        width: 60%;
-        font-size: 70px;
+    .avatar {
+        margin-top: 3%;
     }
-} */
+
+    .avatar-fb {
+        margin-bottom: 3%;
+    }
+
+    .logo-avatar {
+        padding-top: 200%;
+    }
+
+    .review-block {
+        /* margin-left: -%; */
+    }
+}
