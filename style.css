@@ -39,7 +39,7 @@ html {
 .clock,
 .date {
     margin-right: 7%;
-    width: calc(10% + 3 * ((100vw - 320px) / (1440 - 320)));
+    width: calc(10px + 3 * ((100vw - 320px) / (1440 - 320)));
 }
 
 .courses-list {
@@ -471,7 +471,13 @@ li a {
         margin-left: -30%;
     }
 
+    .about {
+        flex-direction: column;
+    }
 
+    .text {
+        width: 80%;
+    }
 
 
 }
