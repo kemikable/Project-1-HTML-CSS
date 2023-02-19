@@ -215,7 +215,6 @@ h1 {
 .duration {
     display: flex;
     justify-content: space-between;
-
     margin-top: 2%;
     padding-right: 5%;
 }
@@ -250,7 +249,6 @@ h2 {
 .format-about {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     font-size: calc(12px + 8 * ((100vw - 320px) / (1440 - 320)));
 }
 
@@ -422,11 +420,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin-right: 10%; */
-    /* margin-top: -5%; */
-    /* gap: 10%;
-    width: 100%; */
-
 }
 
 .footer-right {
@@ -439,7 +432,6 @@ footer {
 
 .sync-white {
     width: calc(70px + 3 * ((100vw - 320px) / (1440 - 320)));
-    /* margin-left: 4%; */
     margin-top: -15%;
 }
 
@@ -452,11 +444,6 @@ footer {
     color: white;
     list-style-type: none;
     font-size: calc(10px + 3 * ((100vw - 320px) / (1440 - 320)));
-
-}
-
-.logo-icon {
-    /* margin-left: 5%; */
 }
 
 .contact-list img {
@@ -490,8 +477,6 @@ li a {
         flex-direction: column;
 
     }
-
-
 
     .webinar,
     .access-forever,
@@ -535,7 +520,6 @@ li a {
         margin-top: 5%;
         gap: 3%;
         margin-left: 3%;
-
     }
 
     .lessons,
@@ -544,56 +528,23 @@ li a {
         width: 35%;
     }
 
-    /* .copyright {
-
-        margin-left: 10%;
-        padding-top: 2%;
-    } */
-
     .comment {
         padding-left: 3%;
     }
-
-    /* .logo-icon {
-        margin-left: 0%;
-    } */
-
-    /* .footer-right {
-        margin-left: 0;
-    } */
-    .footer-flex {
-        flex-direction: column;
-    }
-
-    .logo-list li img {
-        /* width: calc(14px + 7 * ((100vw - 320px) / (1440 - 320))); */
-        /* padding-bottom: 50%; */
-        /* min-width: 15px; */
-    }
-
-    /* .logo-list {
-        margin: 0;
-        padding-top: 3%;
-    } */
-    /* 
-    .sync-white {
-        width: calc(10% + 5 * ((100vw - 320px) / (1440 - 320)));
-        margin-left: 10%;
-        margin-top: 0;
-        min-width: 65px;
-    } */
-
-    /* .contact-list {
-        padding-top: 5%;
-    } */
-
-    /* .footer-left {
-        margin-left: 0%;
-    } */
 }
 
 @media(max-width:1094px) {
     .programm {
         margin-left: 10%;
+    }
+}
+
+@media(max-width:500px) {
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .contact-list {
+        padding-left: 4%;
     }
 }
